@@ -6,13 +6,13 @@ module.exports = function check(str, bracketsConfig) {
 
 
   if (str.length % 2 ===1){
-    return false 
+    return false; 
   }
 
   for(let i = 0; i <bracketsConfig.length; i++){
     keys.push(bracketsConfig[i][0])
     value.push(bracketsConfig[i][i]);
-    obj[bracketsConfig[i][0]] = bracketsConfig[i][i];
+    obj[bracketsConfig[i][0]] = bracketsConfig[i][1];
   }
 
   for(let i = o; i < str.length; i++){
@@ -38,5 +38,6 @@ module.exports = function check(str, bracketsConfig) {
   }else{
     return false;
   }
+
 
 }
